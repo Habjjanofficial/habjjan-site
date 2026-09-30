@@ -310,6 +310,8 @@
       bio.classList.remove('is-open');
       bioLink.setAttribute('aria-expanded', 'false');
       document.body.style.overflow = '';
+      window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+      bio.scrollTop = 0;
     }
     bioLink.addEventListener('click', (event) => {
       event.preventDefault();
