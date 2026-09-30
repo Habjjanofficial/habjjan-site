@@ -316,11 +316,7 @@
       document.documentElement.style.overflow = '';
       document.body.style.overflow = '';
       bio.scrollTop = 0;
-      history.replaceState(null, '', window.location.pathname + window.location.search);
-      requestAnimationFrame(() => {
-        window.scrollTo(0, 0);
-        home.scrollIntoView({ block: 'start', behavior: 'auto' });
-      });
+      window.location.replace(window.location.pathname + window.location.search);
     }
 
     bioLink.addEventListener('click', (event) => {
