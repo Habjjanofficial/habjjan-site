@@ -120,13 +120,52 @@
       outline:none;
     }
     @media (max-width:600px) {
-      body { background-attachment:scroll; background-position:center top; }
-      .container { width:100%; padding:30px 16px; }
-      h1 { font-size:clamp(3.4rem,19vw,5.3rem); letter-spacing:.035em; }
-      .eyebrow { font-size:.58rem; letter-spacing:.35em; }
-      .subtitle { margin-bottom:34px; font-size:.62rem; letter-spacing:.28em; }
-      .socials { gap:14px 0; }
-      .socials a { padding:0 10px; font-size:.58rem; letter-spacing:.12em; }
+      body {
+        min-height:100svh;
+        background-attachment:scroll;
+        background-position:center top;
+      }
+      .container {
+        width:100%;
+        padding:24px 18px 28px;
+      }
+      .eyebrow {
+        margin-bottom:12px;
+        font-size:.54rem;
+        letter-spacing:.30em;
+      }
+      h1 {
+        font-size:clamp(3rem,16.5vw,4.7rem);
+        line-height:.84;
+        letter-spacing:.025em;
+        white-space:nowrap;
+      }
+      .rule {
+        width:56px;
+        margin:22px auto 15px;
+      }
+      .subtitle {
+        margin-bottom:28px;
+        font-size:.58rem;
+        letter-spacing:.24em;
+      }
+      .socials {
+        max-width:360px;
+        margin:0 auto;
+        gap:0;
+        row-gap:14px;
+      }
+      .socials a {
+        padding:0 9px;
+        font-size:.57rem;
+        line-height:1.6;
+        letter-spacing:.10em;
+      }
+    }
+    @media (max-width:380px) {
+      h1 { font-size:15.5vw; }
+      .socials { max-width:320px; }
+      .socials a { padding:0 7px; font-size:.54rem; }
     }
   </style>
 </head>
