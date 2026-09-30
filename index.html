@@ -142,26 +142,35 @@
       outline:none;
     }
     .bio-section {
-      display:none;
       position:fixed;
       inset:0;
       z-index:10;
-      overflow-y:auto;
-      z-index:2;
-      min-height:100vh;
+      min-height:100svh;
       padding:110px max(24px,8vw);
       display:flex;
-      align-items:center;
+      align-items:flex-start;
       background:linear-gradient(135deg,#070707 0%,#111 55%,#070707 100%);
       text-align:left;
-      overflow:hidden;
+      overflow-y:auto;
+      -webkit-overflow-scrolling:touch;
+      visibility:hidden;
+      opacity:0;
+      pointer-events:none;
+      transform:translateY(12px);
+      transition:opacity .3s ease, transform .3s ease, visibility 0s linear .3s;
     }
-    .bio-section.is-open { display:flex; }
+    .bio-section.is-open {
+      visibility:visible;
+      opacity:1;
+      pointer-events:auto;
+      transform:translateY(0);
+      transition:opacity .3s ease, transform .3s ease, visibility 0s;
+    }
     .bio-close {
       position:fixed;
       top:28px;
       right:max(24px,5vw);
-      z-index:4;
+      z-index:12;
       border:0;
       background:transparent;
       color:rgba(244,239,231,.8);
@@ -315,8 +324,9 @@
       bioLink.setAttribute('aria-expanded', 'false');
       document.documentElement.style.overflow = '';
       document.body.style.overflow = '';
-      bio.scrollTop = 0;
-      window.location.replace(window.location.pathname + window.location.search);
+      window.scrollTo(0, 0);
+      window.setTimeout(() => { bio.scrollTop = 0; }, 300);
+
     }
 
     bioLink.addEventListener('click', (event) => {
