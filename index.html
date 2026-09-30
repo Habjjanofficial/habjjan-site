@@ -264,7 +264,7 @@
     <a href="#bio" id="bio-link" aria-expanded="false">Bio</a>
     <a href="#contact">Contact</a>
   </nav>
-  <main class="container">
+  <main class="container" id="home">
     <div class="eyebrow">Official Artist Site</div>
     <h1>HAB<span class="jj">JJ</span>AN</h1>
     <div class="rule"></div>
@@ -299,25 +299,41 @@
     const bio = document.getElementById('bio');
     const bioLink = document.getElementById('bio-link');
     const bioClose = document.querySelector('.bio-close');
+    const home = document.getElementById('home');
 
     function openBio() {
+      window.scrollTo(0, 0);
+      bio.scrollTop = 0;
       bio.classList.add('is-open');
       bioLink.setAttribute('aria-expanded', 'true');
+      document.documentElement.style.overflow = 'hidden';
       document.body.style.overflow = 'hidden';
-      bio.scrollTop = 0;
     }
+
     function closeBio() {
       bio.classList.remove('is-open');
       bioLink.setAttribute('aria-expanded', 'false');
+      document.documentElement.style.overflow = '';
       document.body.style.overflow = '';
-      window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
       bio.scrollTop = 0;
+      history.replaceState(null, '', window.location.pathname + window.location.search);
+      requestAnimationFrame(() => {
+        window.scrollTo(0, 0);
+        home.scrollIntoView({ block: 'start', behavior: 'auto' });
+      });
     }
+
     bioLink.addEventListener('click', (event) => {
       event.preventDefault();
-      bio.classList.contains('is-open') ? closeBio() : openBio();
+      if (bio.classList.contains('is-open')) closeBio();
+      else openBio();
     });
-    bioClose.addEventListener('click', closeBio);
+
+    bioClose.addEventListener('click', (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      closeBio();
+    });
   </script>
 </body>
 </html>
