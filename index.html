@@ -1,103 +1,148 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Habjjan | Site Officiel - Pop, Electro & Urban Music</title>
-    <meta name="description" content="Découvrez l'univers musical de Habjjan. Écoutez les derniers titres et suivez l'actualité de l'artiste.">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Poppins', sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            text-align: center;
-            color: #fff;
-            background-color: #050505;
-            background-image: url('assets/1A452DA5-943C-47C7-BBF9-E6CC4DE21660.png');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-        }
-        .overlay {
-            position: fixed;
-            inset: 0;
-            background: linear-gradient(90deg, rgba(0,0,0,.42), rgba(0,0,0,.08) 50%, rgba(0,0,0,.42));
-            z-index: 1;
-        }
-        .container {
-            position: relative;
-            padding: 40px;
-            background: rgba(8,8,8,.28);
-            border: 1px solid rgba(255,255,255,.12);
-            box-shadow: 0 24px 80px rgba(0,0,0,.45);
-            border-radius: 20px;
-            z-index: 2;
-            backdrop-filter: blur(5px);
-            -webkit-backdrop-filter: blur(5px);
-        }
-        h1 {
-            font-size: 3.5rem;
-            margin: 0 0 5px;
-            letter-spacing: 4px;
-            font-weight: 700;
-            text-shadow: 0 2px 10px rgba(0,0,0,.5);
-            text-transform: uppercase;
-        }
-        p {
-            color: #e0e0e0;
-            font-size: 1.3rem;
-            margin: 0 0 40px;
-            font-weight: 300;
-            text-shadow: 0 1px 5px rgba(0,0,0,.5);
-        }
-        .links a {
-            display: inline-block;
-            margin: 10px;
-            padding: 14px 32px;
-            background-color: #1db954;
-            color: white;
-            text-decoration: none;
-            border-radius: 30px;
-            font-weight: 600;
-            font-size: 1.1rem;
-            transition: transform .3s, filter .3s;
-            box-shadow: 0 4px 15px rgba(0,0,0,.3);
-        }
-        .links a.youtube { background-color: #ff0000; }
-        .links a:hover { transform: translateY(-3px); filter: brightness(1.1); }
-        @media (max-width: 600px) {
-            body { background-attachment: scroll; background-position: center top; }
-            .container { margin: 20px; padding: 30px 20px; }
-            h1 { font-size: 2.5rem; }
-            p { font-size: 1.1rem; }
-            .links a { padding: 12px 24px; font-size: 1rem; }
-        }
-        .socials { margin-top: 28px; display:flex; justify-content:center; gap:18px; flex-wrap:wrap; }
-        .socials a { color:#fff; text-decoration:none; text-transform:uppercase; letter-spacing:2px; font-size:.78rem; opacity:.78; transition:opacity .25s, transform .25s; }
-        .socials a:hover { opacity:1; transform:translateY(-2px); }
-        body::before { content:''; position:fixed; inset:0; pointer-events:none; z-index:1; box-shadow:inset 0 0 180px rgba(0,0,0,.85); }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Habjjan | Site Officiel - Pop, Electro & Urban Music</title>
+  <meta name="description" content="Découvrez l'univers musical de Habjjan. Écoutez les derniers titres et suivez l'actualité de l'artiste.">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin:0; min-height:100%; }
+    body {
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      overflow-x:hidden;
+      color:#f4efe7;
+      text-align:center;
+      font-family:'Montserrat',sans-serif;
+      background:#050505 url('assets/1A452DA5-943C-47C7-BBF9-E6CC4DE21660.png') center/cover no-repeat fixed;
+    }
+    body::before {
+      content:"";
+      position:fixed;
+      inset:0;
+      pointer-events:none;
+      z-index:1;
+      background:
+        radial-gradient(circle at center, transparent 30%, rgba(0,0,0,.18) 58%, rgba(0,0,0,.78) 100%),
+        linear-gradient(180deg, rgba(0,0,0,.12), rgba(0,0,0,.32));
+    }
+    body::after {
+      content:"";
+      position:fixed;
+      inset:0;
+      pointer-events:none;
+      z-index:1;
+      opacity:.12;
+      background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.32'/%3E%3C/svg%3E");
+    }
+    .container {
+      position:relative;
+      z-index:2;
+      width:min(920px,92vw);
+      padding:42px 28px 34px;
+    }
+    .eyebrow {
+      margin:0 0 14px;
+      font-size:.68rem;
+      font-weight:400;
+      letter-spacing:.48em;
+      text-transform:uppercase;
+      color:#c99a6b;
+    }
+    h1 {
+      margin:0;
+      font-family:'Cormorant Garamond',serif;
+      font-size:clamp(4.3rem,11vw,8.8rem);
+      line-height:.78;
+      font-weight:600;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:#f4efe7;
+      text-shadow:0 10px 35px rgba(0,0,0,.62);
+    }
+    h1 .jj {
+      color:#c99a6b;
+      font-style:italic;
+      letter-spacing:-.04em;
+      margin:0 .025em;
+    }
+    .rule {
+      width:72px;
+      height:1px;
+      margin:27px auto 18px;
+      background:#c99a6b;
+      box-shadow:0 0 16px rgba(201,154,107,.35);
+    }
+    .subtitle {
+      margin:0 0 42px;
+      color:rgba(244,239,231,.82);
+      font-size:.76rem;
+      font-weight:300;
+      letter-spacing:.42em;
+      text-transform:uppercase;
+    }
+    .socials {
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:12px 0;
+    }
+    .socials a {
+      position:relative;
+      padding:0 16px;
+      color:rgba(244,239,231,.78);
+      text-decoration:none;
+      text-transform:uppercase;
+      letter-spacing:.18em;
+      font-size:.66rem;
+      font-weight:400;
+      transition:color .25s ease, transform .25s ease;
+    }
+    .socials a + a::before {
+      content:"";
+      position:absolute;
+      left:0;
+      top:50%;
+      width:2px;
+      height:2px;
+      border-radius:50%;
+      background:#c99a6b;
+    }
+    .socials a:hover,
+    .socials a:focus-visible {
+      color:#c99a6b;
+      transform:translateY(-2px);
+      outline:none;
+    }
+    @media (max-width:600px) {
+      body { background-attachment:scroll; background-position:center top; }
+      .container { width:100%; padding:30px 16px; }
+      h1 { font-size:clamp(3.4rem,19vw,5.3rem); letter-spacing:.035em; }
+      .eyebrow { font-size:.58rem; letter-spacing:.35em; }
+      .subtitle { margin-bottom:34px; font-size:.62rem; letter-spacing:.28em; }
+      .socials { gap:14px 0; }
+      .socials a { padding:0 10px; font-size:.58rem; letter-spacing:.12em; }
+    }
+  </style>
 </head>
 <body>
-    <div class="overlay"></div>
-    <main class="container">
-        <h1>HABJJAN</h1>
-        <p>Artiste & Musicien</p>
-        <div class="links">
-            <a href="https://open.spotify.com/artist/1RniqORImVv3ij2RtIMByR" target="_blank" rel="noopener noreferrer">Spotify</a>
-            <a href="https://www.youtube.com/@Habjjan" target="_blank" rel="noopener noreferrer" class="youtube">YouTube</a>
-        </div>
-        <nav class="socials" aria-label="Réseaux sociaux">
-            <a href="https://www.facebook.com/Habjjan" target="_blank" rel="noopener noreferrer">Facebook</a>
-            <a href="https://www.instagram.com/iamhabjjan/" target="_blank" rel="noopener noreferrer">Instagram</a>
-            <a href="https://www.tiktok.com/@iamhabjjan" target="_blank" rel="noopener noreferrer">TikTok</a>
-        </nav>
-    </main>
+  <main class="container">
+    <div class="eyebrow">Official Artist Site</div>
+    <h1>HAB<span class="jj">JJ</span>AN</h1>
+    <div class="rule"></div>
+    <p class="subtitle">Artiste &amp; Musicien</p>
+    <nav class="socials" aria-label="Musique et réseaux sociaux">
+      <a href="https://open.spotify.com/artist/1RniqORImVv3ij2RtIMByR" target="_blank" rel="noopener noreferrer">Spotify</a>
+      <a href="https://www.youtube.com/@Habjjan" target="_blank" rel="noopener noreferrer">YouTube</a>
+      <a href="https://www.facebook.com/Habjjan" target="_blank" rel="noopener noreferrer">Facebook</a>
+      <a href="https://www.instagram.com/iamhabjjan/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="https://www.tiktok.com/@iamhabjjan" target="_blank" rel="noopener noreferrer">TikTok</a>
+    </nav>
+  </main>
 </body>
 </html>
