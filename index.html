@@ -142,6 +142,7 @@
       outline:none;
     }
     .bio-section {
+      display:none;
       position:relative;
       z-index:2;
       min-height:100vh;
@@ -152,6 +153,21 @@
       text-align:left;
       overflow:hidden;
     }
+    .bio-section.is-open { display:flex; }
+    .bio-close {
+      position:absolute;
+      top:28px;
+      right:max(24px,5vw);
+      z-index:4;
+      border:0;
+      background:transparent;
+      color:rgba(244,239,231,.8);
+      font:300 .68rem 'Montserrat',sans-serif;
+      letter-spacing:.22em;
+      text-transform:uppercase;
+      cursor:pointer;
+    }
+    .bio-close:hover, .bio-close:focus-visible { color:#c99a6b; outline:none; }
     .bio-section::before {
       content:"BIO";
       position:absolute;
@@ -242,7 +258,7 @@
   <nav class="topnav" aria-label="Navigation principale">
     <a href="#music">Musique</a>
     <a href="#news">Actualités</a>
-    <a href="#bio">Bio</a>
+    <a href="#bio" id="bio-link" aria-expanded="false">Bio</a>
     <a href="#contact">Contact</a>
   </nav>
   <main class="container">
@@ -259,6 +275,7 @@
     </nav>
   </main>
   <section class="bio-section" id="bio" aria-labelledby="bio-title">
+    <button class="bio-close" type="button" aria-label="Fermer la biographie">Fermer ×</button>
     <div class="bio-inner">
       <div class="bio-kicker">Biographie</div>
       <h2 class="bio-title" id="bio-title">Habjjan ne cherche pas à entrer dans une case.<br>Il préfère en dessiner les contours.</h2>
@@ -275,5 +292,26 @@
       </div>
     </div>
   </section>
+  <script>
+    const bio = document.getElementById('bio');
+    const bioLink = document.getElementById('bio-link');
+    const bioClose = document.querySelector('.bio-close');
+
+    function openBio() {
+      bio.classList.add('is-open');
+      bioLink.setAttribute('aria-expanded', 'true');
+      requestAnimationFrame(() => bio.scrollIntoView({ behavior: 'smooth', block: 'start' }));
+    }
+    function closeBio() {
+      bio.classList.remove('is-open');
+      bioLink.setAttribute('aria-expanded', 'false');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    bioLink.addEventListener('click', (event) => {
+      event.preventDefault();
+      bio.classList.contains('is-open') ? closeBio() : openBio();
+    });
+    bioClose.addEventListener('click', closeBio);
+  </script>
 </body>
 </html>
