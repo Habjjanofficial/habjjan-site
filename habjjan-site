@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habjjan | Site Officiel - Pop, Electro & Urban Music</title>
+    <meta name="description" content="Découvrez l'univers musical pop, electro et urban de Habjjan. Écoutez les derniers titres sur Spotify et YouTube Music, et regardez les clips sur YouTube.">
+    
+    <!-- Balisage SEO structuré (Schema.org MusicGroup) pour Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MusicGroup",
+      "name": "Habjjan",
+      "genre": "Pop, Electro, Urban",
+      "sameAs": [
+        "https://open.spotify.com/artist/1RniqORImVv3ij2RtIMByR",
+        "https://www.youtube.com/@Habjjan",
+        "https://music.youtube.com/channel/UCE8uZdYt8PdTHijw4_Pu8uw"
+      ]
+    }
+    </script>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0d0d0d;
+            color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+        .container {
+            max-width: 400px;
+            width: 90%;
+            padding: 20px;
+        }
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background-color: #222;
+            margin: 0 auto 20px auto;
+            background-size: cover;
+            background-position: center;
+            border: 2px solid #fff;
+        }
+        h1 {
+            font-size: 26px;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+        p {
+            color: #a0a0a0;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+        .btn {
+            display: block;
+            background: #1a1a1a;
+            color: white;
+            padding: 14px;
+            margin: 12px 0;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            border: 1px solid #333;
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            background: #ffffff;
+            color: #000000;
+            border-color: #ffffff;
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 12px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Tu pourras remplacer l'URL de l'image par le lien direct de ta photo de profil officielle plus tard -->
+        <div class="avatar" style="background-image: url('');"></div>
+        
+        <h1>HABJJAN</h1>
+        <p>Pop / Electro / Urban</p>
+
+        <!-- Tes liens officiels intégrés -->
+        <a href="https://open.spotify.com/artist/1RniqORImVv3ij2RtIMByR?si=XuLtYgzjTcuf5dkEcwRZiA" class="btn" target="_blank">🎧 Écouter sur Spotify</a>
+        <a href="https://music.youtube.com/channel/UCE8uZdYt8PdTHijw4_Pu8uw" class="btn" target="_blank">🎵 YouTube Music</a>
+        <a href="https://www.youtube.com/@Habjjan" class="btn" target="_blank">▶️ Chaîne YouTube Officielle</a>
+
+        <div class="footer">
+            © 2026 Habjjan. Tous droits réservés.
+        </div>
+    </div>
+
+</body>
+</html>
