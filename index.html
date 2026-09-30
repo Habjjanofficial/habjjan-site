@@ -143,7 +143,10 @@
     }
     .bio-section {
       display:none;
-      position:relative;
+      position:fixed;
+      inset:0;
+      z-index:10;
+      overflow-y:auto;
       z-index:2;
       min-height:100vh;
       padding:110px max(24px,8vw);
@@ -155,7 +158,7 @@
     }
     .bio-section.is-open { display:flex; }
     .bio-close {
-      position:absolute;
+      position:fixed;
       top:28px;
       right:max(24px,5vw);
       z-index:4;
@@ -300,12 +303,13 @@
     function openBio() {
       bio.classList.add('is-open');
       bioLink.setAttribute('aria-expanded', 'true');
-      requestAnimationFrame(() => bio.scrollIntoView({ behavior: 'smooth', block: 'start' }));
+      document.body.style.overflow = 'hidden';
+      bio.scrollTop = 0;
     }
     function closeBio() {
       bio.classList.remove('is-open');
       bioLink.setAttribute('aria-expanded', 'false');
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      document.body.style.overflow = '';
     }
     bioLink.addEventListener('click', (event) => {
       event.preventDefault();
