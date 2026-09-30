@@ -141,6 +141,36 @@
       transform:translateY(-2px);
       outline:none;
     }
+    .bio-section {
+      position:relative;
+      z-index:2;
+      min-height:100vh;
+      padding:110px max(24px,8vw);
+      display:flex;
+      align-items:center;
+      background:linear-gradient(135deg,#070707 0%,#111 55%,#070707 100%);
+      text-align:left;
+      overflow:hidden;
+    }
+    .bio-section::before {
+      content:"BIO";
+      position:absolute;
+      right:-.04em;
+      top:5%;
+      font-family:'Cormorant Garamond',serif;
+      font-size:clamp(9rem,28vw,28rem);
+      line-height:1;
+      color:rgba(201,154,107,.055);
+      pointer-events:none;
+    }
+    .bio-inner { position:relative; width:min(820px,100%); margin:0 auto; }
+    .bio-kicker { margin:0 0 22px; color:#c99a6b; font-size:.66rem; letter-spacing:.42em; text-transform:uppercase; }
+    .bio-title { margin:0 0 36px; font-family:'Cormorant Garamond',serif; font-size:clamp(3rem,7vw,5.8rem); line-height:.95; font-weight:500; color:#f4efe7; }
+    .bio-copy { max-width:760px; color:rgba(244,239,231,.78); font-size:clamp(.92rem,1.4vw,1.08rem); line-height:1.9; font-weight:300; }
+    .bio-copy p { margin:0 0 20px; }
+    .bio-copy strong { color:#f4efe7; font-weight:500; }
+    .bio-manifesto { margin-top:42px; padding-left:24px; border-left:1px solid #c99a6b; font-family:'Cormorant Garamond',serif; font-size:clamp(1.55rem,3vw,2.35rem); line-height:1.25; color:#f4efe7; }
+    .bio-love { display:block; margin-top:24px; color:#c99a6b; font-style:italic; font-size:1.25em; }
     @media (max-width:600px) {
       .topnav {
         top:18px;
@@ -153,6 +183,10 @@
         font-size:.48rem;
         letter-spacing:.08em;
       }
+      .bio-section { padding:84px 24px 72px; }
+      .bio-title { margin-bottom:28px; }
+      .bio-copy { font-size:.9rem; line-height:1.75; }
+      .bio-manifesto { margin-top:34px; padding-left:18px; }
       body {
         min-height:100svh;
         background-attachment:scroll;
@@ -224,5 +258,22 @@
       <a href="https://www.tiktok.com/@iamhabjjan" target="_blank" rel="noopener noreferrer">TikTok</a>
     </nav>
   </main>
+  <section class="bio-section" id="bio" aria-labelledby="bio-title">
+    <div class="bio-inner">
+      <div class="bio-kicker">Biographie</div>
+      <h2 class="bio-title" id="bio-title">Habjjan ne cherche pas à entrer dans une case.<br>Il préfère en dessiner les contours.</h2>
+      <div class="bio-copy">
+        <p>Artiste, auteur et interprète français installé à Rome depuis plus de vingt ans, Habjjan construit une pop instinctive où se rencontrent électronique, soul, rythmes urbains et influences venues de plusieurs cultures. Le français, l’anglais et l’italien s’y croisent naturellement, comme les différentes villes et expériences qui ont façonné son identité.</p>
+        <p>Chez lui, la musique part d’abord de l’émotion. <strong>La voix est au centre : grave, chaude, parfois fragile, toujours profondément humaine.</strong> Autour d’elle, les productions peuvent être dépouillées ou dansantes, sombres ou lumineuses, mais conservent la même recherche : transformer une expérience intime en quelque chose d’universel.</p>
+        <p>Son univers visuel prolonge cette démarche. Habjjan pense la musique autant par le son que par l’image, avec une direction artistique où se mêlent élégance, sensualité, contraste et une certaine brutalité contemporaine.</p>
+        <p>Avec <strong><em>Poppsyche</em></strong>, Habjjan affirme une identité artistique de plus en plus personnelle. Cette vision se poursuit aujourd’hui avec <strong><em>Un peu d’amour</em></strong>, son nouveau projet <strong>actuellement en phase de finalisation</strong> : une œuvre où se croisent désir, identité, perte, rapports humains, liberté et cette nécessité presque obstinée de continuer à chercher de la beauté dans un monde qui ne l’est pas toujours.</p>
+        <div class="bio-manifesto">
+          Pas une recherche de perfection.<br>
+          Une recherche de vérité.
+          <span class="bio-love">Et, au milieu du bruit, une idée demeure : un peu d’amour.</span>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
