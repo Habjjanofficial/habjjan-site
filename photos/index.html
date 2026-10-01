@@ -26,14 +26,20 @@ a{color:inherit}.nav{position:sticky;top:0;z-index:5;display:flex;justify-conten
 h1{font-family:'Cormorant Garamond',serif;font-size:clamp(3.2rem,8vw,6.8rem);line-height:.95;font-weight:500;margin:0 0 28px}
 .lead{max-width:760px;font-size:clamp(1.02rem,2vw,1.28rem);line-height:1.7;color:rgba(244,239,231,.82)}
 .rule{width:64px;height:1px;background:#c99a6b;margin:34px 0 42px}
-.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}
-.card{position:relative;min-height:340px;background:#0d0d0d;border:1px solid rgba(201,154,107,.12);overflow:hidden}
-.card::after{content:"À venir";position:absolute;left:22px;bottom:20px;text-transform:uppercase;letter-spacing:.18em;font-size:.58rem;color:#c99a6b}
-.card:nth-child(1),.card:nth-child(4){grid-column:span 7;min-height:520px}
-.card:nth-child(2),.card:nth-child(3){grid-column:span 5}
-.card:nth-child(5),.card:nth-child(6){grid-column:span 6}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px;align-items:start}
+.card{position:relative;margin:0;background:#0d0d0d;border:1px solid rgba(201,154,107,.12);overflow:hidden}
+.card img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .45s ease,filter .45s ease}
+.card:hover img{transform:scale(1.012);filter:contrast(1.03)}
+.card:nth-child(1){grid-column:span 7;aspect-ratio:2/3}
+.card:nth-child(2){grid-column:span 5;aspect-ratio:2/3}
+.card:nth-child(3){grid-column:span 5;aspect-ratio:2/3}
+.card:nth-child(4){grid-column:span 7;aspect-ratio:16/9;align-self:end}
+.card:nth-child(1) img{object-position:center 28%}
+.card:nth-child(2) img{object-position:center}
+.card:nth-child(3) img{object-position:center}
+.card:nth-child(4) img{object-position:center}
 .caption{margin-top:34px;max-width:780px;color:rgba(244,239,231,.68);line-height:1.8;font-size:.94rem}
-@media(max-width:700px){.nav{gap:0;justify-content:space-evenly}.nav a{font-size:.44rem;letter-spacing:.05em}.wrap{padding:64px 0 72px}.grid{grid-template-columns:1fr}.card,.card:nth-child(n){grid-column:auto;min-height:420px}}
+@media(max-width:700px){.nav{gap:0;justify-content:space-evenly;overflow-x:auto}.nav a{font-size:.44rem;letter-spacing:.05em;padding:0 3px}.wrap{padding:64px 0 72px}.grid{grid-template-columns:1fr;gap:14px}.card,.card:nth-child(n){grid-column:auto;aspect-ratio:auto}.card img{height:auto;object-fit:contain}}
 </style>
 </head>
 <body>
@@ -45,9 +51,13 @@ h1{font-family:'Cormorant Garamond',serif;font-size:clamp(3.2rem,8vw,6.8rem);lin
 <h1>Image, présence, mouvement.</h1>
 <p class="lead">Cette page rassemble le travail photo de Habjjan : portraits, éditoriaux, looks mode, images artistiques et sélection book. Elle met en avant une autre facette de son identité visuelle, entre musique, mode et présence devant l’objectif.</p>
 <div class="rule"></div>
-<section class="grid" aria-label="Portfolio photo à venir">
-<div class="card"></div><div class="card"></div><div class="card"></div><div class="card"></div><div class="card"></div><div class="card"></div>
+<section class="grid" aria-label="Portfolio photo officiel de Habjjan">
+<figure class="card"><img src="/assets/portfolio-habjjan-01.svg" alt="Portrait noir et blanc de Habjjan avec chapeau et lunettes" loading="eager"></figure>
+<figure class="card"><img src="/assets/5D685EA5-76EA-40BD-8010-EFC2102C21B2.jpeg" alt="Habjjan de profil en veste de cuir noire" loading="lazy"></figure>
+<figure class="card"><img src="/assets/E5331509-D888-41D8-9E9E-171BF70DCA0D.png" alt="Portrait plein pied studio de Habjjan" loading="lazy"></figure>
+<figure class="card"><img src="/assets/21964145-4BDD-4496-B613-43AF18F7C787.png" alt="Portrait expressif de Habjjan sur fond noir" loading="lazy"></figure>
 </section>
+<p class="caption">Sélection officielle — portraits, mode et expression.</p>
 </main>
 </body>
 </html>
