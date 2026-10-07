@@ -9,6 +9,10 @@
   <meta name="author" content="Habjjan">
   <meta name="theme-color" content="#050505">
   <link rel="canonical" href="https://habjjan.com/">
+  <link rel="alternate" hreflang="fr" href="https://habjjan.com/">
+  <link rel="alternate" hreflang="en" href="https://habjjan.com/en/">
+  <link rel="alternate" hreflang="it" href="https://habjjan.com/it/">
+  <link rel="alternate" hreflang="x-default" href="https://habjjan.com/">
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Habjjan">
@@ -121,6 +125,9 @@
       transition:color .25s ease;
     }
     .topnav a:hover, .topnav a:focus-visible { color:#c99a6b; outline:none; }
+    .language-switcher{position:fixed;top:22px;right:24px;z-index:4;display:flex;gap:10px;align-items:center}
+    .language-switcher a{font-size:.9rem;text-decoration:none;opacity:.72;transition:opacity .25s ease,transform .25s ease}
+    .language-switcher a:hover,.language-switcher a:focus-visible{opacity:1;transform:translateY(-1px);outline:none}
     .container {
       position:relative;
       z-index:2;
@@ -285,6 +292,8 @@
     }
 
     @media (max-width:600px) {
+      .language-switcher{top:48px;right:14px;gap:8px}
+      .language-switcher a{font-size:.78rem}
       .topnav {
         top:18px;
         width:100%;
@@ -363,6 +372,10 @@
   </style>
 </head>
 <body>
+  <nav class="language-switcher" aria-label="Choisir la langue">
+    <a href="/en/" lang="en" hreflang="en" aria-label="English">🇬🇧</a>
+    <a href="/it/" lang="it" hreflang="it" aria-label="Italiano">🇮🇹</a>
+  </nav>
   <div class="site-intro" id="site-intro" aria-hidden="true">
     <video id="site-intro-video" muted playsinline autoplay preload="auto">
       <source src="assets/2C7CC2D4-E2EF-4355-8348-E3D6632E42A3.mov">
