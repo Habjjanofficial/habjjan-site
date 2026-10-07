@@ -276,27 +276,43 @@
     @media (prefers-reduced-motion: reduce) {
       .site-intro { display:none !important; }
     }
-    /* Tablet/iPad: keep the hero composition centered as a single visual block. */
+    /* Tablet/iPad: center the complete hero stack on one common axis. */
     @media (min-width:601px) and (max-width:1180px) {
       .container {
-        width:min(920px,94vw);
-        padding-left:18px;
-        padding-right:18px;
+        width:100%;
+        max-width:920px;
+        padding-left:24px;
+        padding-right:24px;
+        margin-left:auto;
+        margin-right:auto;
+        text-align:center;
+      }
+      .eyebrow,
+      h1,
+      .rule,
+      .subtitle,
+      .listen-cta,
+      .socials {
+        position:relative;
+        left:50%;
+        transform:translateX(-50%);
       }
       h1 {
-        font-size:clamp(4.3rem,11vw,7.4rem);
-        transform:none;
+        width:max-content;
+        max-width:calc(100vw - 48px);
+        font-size:clamp(4rem,10vw,7rem);
       }
-      .rule,
-      .subtitle {
-        transform:none;
-      }
+      .rule { margin-left:0; margin-right:0; }
       .listen-cta {
-        transform:translateY(10px);
+        transform:translate(-50%,10px);
       }
       .listen-cta:hover,
       .listen-cta:focus-visible {
-        transform:translateY(8px);
+        transform:translate(-50%,8px);
+      }
+      .socials {
+        width:max-content;
+        max-width:calc(100vw - 48px);
       }
     }
     @media (max-width:600px) {
