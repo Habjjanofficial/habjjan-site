@@ -242,6 +242,40 @@
       transform:translateY(-2px);
       outline:none;
     }
+
+    /* Opening ident: isolated overlay; homepage layout below remains unchanged. */
+    .site-intro {
+      position:fixed;
+      inset:0;
+      z-index:9999;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      width:100vw;
+      height:100vh;
+      height:100dvh;
+      overflow:hidden;
+      background:#000;
+      opacity:1;
+      visibility:visible;
+      transition:opacity .5s ease, visibility 0s linear .5s;
+    }
+    .site-intro.is-ending {
+      opacity:0;
+      visibility:hidden;
+      pointer-events:none;
+    }
+    .site-intro[hidden] { display:none; }
+    .site-intro video {
+      width:100%;
+      height:100%;
+      display:block;
+      object-fit:contain;
+      background:#000;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .site-intro { display:none !important; }
+    }
     @media (max-width:600px) {
       .topnav {
         top:18px;
@@ -321,6 +355,11 @@
   </style>
 </head>
 <body>
+  <div class="site-intro" id="site-intro" aria-hidden="true">
+    <video id="site-intro-video" muted playsinline autoplay preload="auto">
+      <source src="assets/2C7CC2D4-E2EF-4355-8348-E3D6632E42A3.mov">
+    </video>
+  </div>
   <nav class="topnav" aria-label="Navigation principale">
     <a href="/">Accueil</a><a href="/voix/">Voix</a><a href="/musique/">Musique</a>
     <a href="/actualites/">Actualités</a>
@@ -343,6 +382,45 @@
       <a href="https://www.tiktok.com/@iamhabjjan" target="_blank" rel="noopener noreferrer">TikTok</a>
     </nav>
   </main>
+
+  <script>
+    (() => {
+      const intro = document.getElementById('site-intro');
+      const video = document.getElementById('site-intro-video');
+      const key = 'habjjanIntroSeen';
+      const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      const removeIntro = (fade = true) => {
+        if (!intro) return;
+        if (!fade) {
+          intro.hidden = true;
+          return;
+        }
+        intro.classList.add('is-ending');
+        window.setTimeout(() => { intro.hidden = true; }, 520);
+      };
+
+      if (reducedMotion || sessionStorage.getItem(key) === '1') {
+        removeIntro(false);
+        return;
+      }
+
+      sessionStorage.setItem(key, '1');
+
+      const finish = () => removeIntro(true);
+      video.addEventListener('ended', finish, { once:true });
+      video.addEventListener('error', () => removeIntro(false), { once:true });
+
+      const playAttempt = video.play();
+      if (playAttempt && typeof playAttempt.catch === 'function') {
+        playAttempt.catch(() => removeIntro(false));
+      }
+
+      window.setTimeout(() => {
+        if (!intro.hidden) finish();
+      }, 7000);
+    })();
+  </script>
 
 </body>
 </html>
