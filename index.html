@@ -280,6 +280,9 @@
     @media (min-width:601px) and (max-width:1180px) {
       body {
         display:block;
+        /* The portrait's visual center sits left of the source image center.
+           Shift the background image right on iPad without moving the UI. */
+        background-position:56% top;
       }
       .container {
         position:fixed;
