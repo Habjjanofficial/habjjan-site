@@ -78,14 +78,7 @@
       color:#f4efe7;
       text-align:center;
       font-family:'Montserrat',sans-serif;
-      background-color:#050505;
-      background-image:url('assets/1A452DA5-943C-47C7-BBF9-E6CC4DE21660.png');
-      background-size:cover;
-      background-repeat:no-repeat;
-      background-attachment:fixed;
-      /* The source portrait is not optically centered inside its canvas.
-         Reframe the image only; the centered UI remains untouched. */
-      background-position:56% center;
+      background:#050505 url('assets/1A452DA5-943C-47C7-BBF9-E6CC4DE21660.png') center/cover no-repeat fixed;
     }
     body::before {
       content:"";
@@ -283,6 +276,12 @@
     @media (prefers-reduced-motion: reduce) {
       .site-intro { display:none !important; }
     }
+    @media (min-width:601px) {
+      .container {
+        transform:translateX(10px);
+      }
+    }
+
     @media (max-width:600px) {
       .topnav {
         top:18px;
