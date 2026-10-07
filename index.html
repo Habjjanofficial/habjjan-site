@@ -276,16 +276,21 @@
     @media (prefers-reduced-motion: reduce) {
       .site-intro { display:none !important; }
     }
-    /* Tablet/iPad: center the complete hero stack on one common axis. */
+    /* Tablet/iPad: center against the actual visual viewport, not the layout viewport. */
     @media (min-width:601px) and (max-width:1180px) {
+      body {
+        display:block;
+      }
       .container {
-        width:100%;
-        max-width:920px;
-        padding-left:24px;
-        padding-right:24px;
-        margin-left:auto;
-        margin-right:auto;
+        position:fixed;
+        left:50%;
+        top:50%;
+        width:min(920px,94vw);
+        max-width:none;
+        margin:0;
+        padding:42px 24px 34px;
         text-align:center;
+        transform:translate(-50%,-50%);
       }
       .eyebrow,
       h1,
@@ -293,26 +298,33 @@
       .subtitle,
       .listen-cta,
       .socials {
-        position:relative;
-        left:50%;
-        transform:translateX(-50%);
+        position:static;
+        left:auto;
       }
       h1 {
-        width:max-content;
-        max-width:calc(100vw - 48px);
+        width:auto;
+        max-width:none;
         font-size:clamp(4rem,10vw,7rem);
+        transform:none;
       }
-      .rule { margin-left:0; margin-right:0; }
+      .rule {
+        margin:27px auto 18px;
+        transform:none;
+      }
+      .subtitle {
+        transform:none;
+      }
       .listen-cta {
-        transform:translate(-50%,10px);
+        transform:translateY(10px);
       }
       .listen-cta:hover,
       .listen-cta:focus-visible {
-        transform:translate(-50%,8px);
+        transform:translateY(8px);
       }
       .socials {
-        width:max-content;
-        max-width:calc(100vw - 48px);
+        width:auto;
+        max-width:none;
+        transform:translateY(12px);
       }
     }
     @media (max-width:600px) {
