@@ -278,7 +278,9 @@
     }
     @media (min-width:601px) {
       .container {
-        transform:translateX(10px);
+        /* Match the mobile composition: keep the optical horizontal correction
+           and place the hero lower, around the mouth/beard area. */
+        transform:translate(10px, 11vh);
       }
     }
 
