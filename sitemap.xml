@@ -21,4 +21,7 @@
   <url><loc>https://habjjan.com/it/bio/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://habjjan.com/it/foto/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://habjjan.com/it/contatti/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://habjjan.com/discographie/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://habjjan.com/en/discography/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://habjjan.com/it/discografia/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>
