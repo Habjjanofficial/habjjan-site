@@ -1,27 +1,282 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://habjjan.com/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://habjjan.com/voix/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://habjjan.com/musique/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://habjjan.com/actualites/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://habjjan.com/bio/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://habjjan.com/photos/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://habjjan.com/contact/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://habjjan.com/en/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://habjjan.com/en/voice/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://habjjan.com/en/music/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://habjjan.com/en/news/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://habjjan.com/en/bio/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://habjjan.com/en/photos/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://habjjan.com/en/contact/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://habjjan.com/it/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://habjjan.com/it/voce/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://habjjan.com/it/musica/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://habjjan.com/it/news/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://habjjan.com/it/bio/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://habjjan.com/it/foto/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://habjjan.com/it/contatti/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://habjjan.com/discographie/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://habjjan.com/en/discography/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://habjjan.com/it/discografia/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://habjjan.com/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://habjjan.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://habjjan.com/en/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://habjjan.com/it/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://habjjan.com/" />
+  </url>
+  <url>
+    <loc>https://habjjan.com/voix/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://habjjan.com/voix/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://habjjan.com/en/voice/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://habjjan.com/it/voce/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://habjjan.com/voix/" />
+  </url>
+  <url>
+    <loc>https://habjjan.com/musique/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://habjjan.com/musique/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://habjjan.com/en/music/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://habjjan.com/it/musica/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://habjjan.com/musique/" />
+    <image:image>
+      <image:loc>https://habjjan.com/assets/0FFDF774-9ADA-43D8-9DD2-EA11B3C364C9.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://habjjan.com/assets/Live_My_Life_Habjjan.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://habjjan.com/actualites/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://habjjan.com/actualites/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://habjjan.com/en/news/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://habjjan.com/it/news/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://habjjan.com/actualites/" />
+  </url>
+  <url>
+    <loc>https://habjjan.com/bio/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://habjjan.com/bio/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://habjjan.com/en/bio/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://habjjan.com/it/bio/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://habjjan.com/bio/" />
+  </url>
+  <url>
+    <loc>https://habjjan.com/photos/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://habjjan.com/photos/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://habjjan.com/en/photos/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://habjjan.com/it/foto/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://habjjan.com/photos/" />
+    <image:image>
+      <image:loc>https://habjjan.com/assets/7BF45E12-B565-4F1B-BC09-46A16D210A3D.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://habjjan.com/assets/5D685EA5-76EA-40BD-8010-EFC2102C21B2.jpeg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://habjjan.com/assets/E5331509-D888-41D8-9E9E-171BF70DCA0D.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://habjjan.com/assets/21964145-4BDD-4496-B613-43AF18F7C787.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://habjjan.com/assets/F2AF8537-1B6C-47F4-96BC-CDA012796630.jpeg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://habjjan.com/contact/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://habjjan.com/contact/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://habjjan.com/en/contact/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://habjjan.com/it/contatti/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://habjjan.com/contact/" />
+  </url>
+  <url>
+    <loc>https://habjjan.com/en/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://habjjan.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://habjjan.com/en/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://habjjan.com/it/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://habjjan.com/" />
+  </url>
+  <url>
+    <loc>https://habjjan.com/en/voice/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://habjjan.com/voix/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://habjjan.com/en/voice/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://habjjan.com/it/voce/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://habjjan.com/voix/" />
+  </url>
+  <url>
+    <loc>https://habjjan.com/en/music/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://habjjan.com/musique/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://habjjan.com/en/music/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://habjjan.com/it/musica/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://habjjan.com/musique/" />
+    <image:image>
+      <image:loc>https://habjjan.com/assets/0FFDF774-9ADA-43D8-9DD2-EA11B3C364C9.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://habjjan.com/assets/Live_My_Life_Habjjan.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://habjjan.com/en/news/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://habjjan.com/actualites/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://habjjan.com/en/news/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://habjjan.com/it/news/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://habjjan.com/actualites/" />
+  </url>
+  <url>
+    <loc>https://habjjan.com/en/bio/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://habjjan.com/bio/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://habjjan.com/en/bio/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://habjjan.com/it/bio/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://habjjan.com/bio/" />
+  </url>
+  <url>
+    <loc>https://habjjan.com/en/photos/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://habjjan.com/photos/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://habjjan.com/en/photos/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://habjjan.com/it/foto/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://habjjan.com/photos/" />
+    <image:image>
+      <image:loc>https://habjjan.com/assets/7BF45E12-B565-4F1B-BC09-46A16D210A3D.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://habjjan.com/assets/5D685EA5-76EA-40BD-8010-EFC2102C21B2.jpeg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://habjjan.com/assets/E5331509-D888-41D8-9E9E-171BF70DCA0D.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://habjjan.com/assets/21964145-4BDD-4496-B613-43AF18F7C787.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://habjjan.com/assets/F2AF8537-1B6C-47F4-96BC-CDA012796630.jpeg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://habjjan.com/en/contact/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://habjjan.com/contact/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://habjjan.com/en/contact/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://habjjan.com/it/contatti/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://habjjan.com/contact/" />
+  </url>
+  <url>
+    <loc>https://habjjan.com/it/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://habjjan.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://habjjan.com/en/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://habjjan.com/it/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://habjjan.com/" />
+  </url>
+  <url>
+    <loc>https://habjjan.com/it/voce/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://habjjan.com/voix/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://habjjan.com/en/voice/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://habjjan.com/it/voce/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://habjjan.com/voix/" />
+  </url>
+  <url>
+    <loc>https://habjjan.com/it/musica/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://habjjan.com/musique/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://habjjan.com/en/music/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://habjjan.com/it/musica/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://habjjan.com/musique/" />
+    <image:image>
+      <image:loc>https://habjjan.com/assets/0FFDF774-9ADA-43D8-9DD2-EA11B3C364C9.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://habjjan.com/assets/Live_My_Life_Habjjan.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://habjjan.com/it/news/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://habjjan.com/actualites/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://habjjan.com/en/news/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://habjjan.com/it/news/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://habjjan.com/actualites/" />
+  </url>
+  <url>
+    <loc>https://habjjan.com/it/bio/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://habjjan.com/bio/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://habjjan.com/en/bio/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://habjjan.com/it/bio/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://habjjan.com/bio/" />
+  </url>
+  <url>
+    <loc>https://habjjan.com/it/foto/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://habjjan.com/photos/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://habjjan.com/en/photos/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://habjjan.com/it/foto/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://habjjan.com/photos/" />
+    <image:image>
+      <image:loc>https://habjjan.com/assets/7BF45E12-B565-4F1B-BC09-46A16D210A3D.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://habjjan.com/assets/5D685EA5-76EA-40BD-8010-EFC2102C21B2.jpeg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://habjjan.com/assets/E5331509-D888-41D8-9E9E-171BF70DCA0D.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://habjjan.com/assets/21964145-4BDD-4496-B613-43AF18F7C787.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://habjjan.com/assets/F2AF8537-1B6C-47F4-96BC-CDA012796630.jpeg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://habjjan.com/it/contatti/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://habjjan.com/contact/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://habjjan.com/en/contact/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://habjjan.com/it/contatti/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://habjjan.com/contact/" />
+  </url>
+  <url>
+    <loc>https://habjjan.com/discographie/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://habjjan.com/discographie/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://habjjan.com/en/discography/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://habjjan.com/it/discografia/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://habjjan.com/discographie/" />
+  </url>
+  <url>
+    <loc>https://habjjan.com/en/discography/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://habjjan.com/discographie/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://habjjan.com/en/discography/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://habjjan.com/it/discografia/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://habjjan.com/discographie/" />
+  </url>
+  <url>
+    <loc>https://habjjan.com/it/discografia/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://habjjan.com/discographie/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://habjjan.com/en/discography/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://habjjan.com/it/discografia/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://habjjan.com/discographie/" />
+  </url>
 </urlset>
