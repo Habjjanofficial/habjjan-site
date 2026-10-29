@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://habjjan.com/</loc>
     <changefreq>monthly</changefreq>
@@ -41,6 +41,14 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://habjjan.com/en/news/" />
     <xhtml:link rel="alternate" hreflang="it" href="https://habjjan.com/it/news/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://habjjan.com/actualites/" />
+    <video:video>
+      <video:thumbnail_loc>https://habjjan.com/assets/habjjan-glorious-poster.jpg</video:thumbnail_loc>
+      <video:title>Glorious — Flash &amp; Lights Remix — Social’s Video Version | Habjjan</video:title>
+      <video:description>Découvrez la vidéo de Glorious de Habjjan, un titre du prochain album Un peu d’amour sur l’acceptation de soi, la vulnérabilité et la liberté d’être humain.</video:description>
+      <video:content_loc>https://habjjan.com/assets/habjjan-glorious.mp4</video:content_loc>
+      <video:duration>231</video:duration>
+      <video:publication_date>2026-10-29</video:publication_date>
+    </video:video>
   </url>
   <url>
     <loc>https://habjjan.com/bio/</loc>
@@ -125,6 +133,14 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://habjjan.com/en/news/" />
     <xhtml:link rel="alternate" hreflang="it" href="https://habjjan.com/it/news/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://habjjan.com/actualites/" />
+    <video:video>
+      <video:thumbnail_loc>https://habjjan.com/assets/habjjan-glorious-poster.jpg</video:thumbnail_loc>
+      <video:title>Glorious — Flash &amp; Lights Remix — Social’s Video Version | Habjjan</video:title>
+      <video:description>Watch Glorious by Habjjan, a song from the forthcoming album Un peu d’amour about self-acceptance, vulnerability and the freedom to be human.</video:description>
+      <video:content_loc>https://habjjan.com/assets/habjjan-glorious.mp4</video:content_loc>
+      <video:duration>231</video:duration>
+      <video:publication_date>2026-10-29</video:publication_date>
+    </video:video>
   </url>
   <url>
     <loc>https://habjjan.com/en/bio/</loc>
@@ -209,6 +225,14 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://habjjan.com/en/news/" />
     <xhtml:link rel="alternate" hreflang="it" href="https://habjjan.com/it/news/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://habjjan.com/actualites/" />
+    <video:video>
+      <video:thumbnail_loc>https://habjjan.com/assets/habjjan-glorious-poster.jpg</video:thumbnail_loc>
+      <video:title>Glorious — Flash &amp; Lights Remix — Social’s Video Version | Habjjan</video:title>
+      <video:description>Guarda il video di Glorious di Habjjan, un brano del prossimo album Un peu d’amour sull’accettazione di sé, la vulnerabilità e la libertà di essere umani.</video:description>
+      <video:content_loc>https://habjjan.com/assets/habjjan-glorious.mp4</video:content_loc>
+      <video:duration>231</video:duration>
+      <video:publication_date>2026-10-29</video:publication_date>
+    </video:video>
   </url>
   <url>
     <loc>https://habjjan.com/it/bio/</loc>
